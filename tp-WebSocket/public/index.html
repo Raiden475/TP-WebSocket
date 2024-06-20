@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Tickets</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="ticket-page">
+    <div id="main-container">
+        <button id="reset-button" class="action-button">Reiniciar</button>
+        <div id="left-screen">
+            <div id="ticket-info">
+                <h1 id="main-screen-title">NUEVO TURNO</h1>
+                <h2 id="current-ticket-left">TURNO 0</h2>
+                <p id="current-box-left">BOX 0</p>
+                <button id="call-ticket" class="action-button">Llamar Ticket</button>
+            </div>
+        </div>
+        <div id="right-screens">
+            <div class="right-screen">
+                <h2>TURNO <span id="current-ticket-1">-</span></h2>
+                <p>BOX <span id="current-box-1">-</span></p>
+            </div>
+            <div class="right-screen">
+                <h2>TURNO <span id="current-ticket-2">-</span></h2>
+                <p>BOX <span id="current-box-2">-</span></p>
+            </div>
+            <div class="right-screen">
+                <h2>TURNO <span id="current-ticket-3">-</span></h2>
+                <p>BOX <span id="current-box-3">-</span></p>
+            </div>
+        </div>
+        <button id="chat-button" class="floating-button">Chat</button>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
